@@ -1,8 +1,9 @@
-FROM node:14
+FROM node:8
+Run echo"Try to build my app "
 COPY . /var/www
 WORKDIR /var/www
 #RUN npm install
 
-EXPOSE 1004
+EXPOSE 3000
 
 CMD [ "node", "index.js" ]
