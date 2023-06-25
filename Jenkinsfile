@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('SCM Checkout'){
             steps {
-            git branch: 'main', url: 'https://github.com/naresh26git/microservices.git'
+            git branch: 'main', url: 'https://github.com/sarvan047/microservices.git'
             sh 'ls'
             }
         }
@@ -63,7 +63,7 @@ pipeline {
                                     -D sonar.inclusions=index.py \
                                     -D sonar.sourceEncoding=UTF-8 \
                                     -D sonar.language=python \
-                                    -D sonar.host.url=http://13.232.29.132:9000/"""
+                                    -D sonar.host.url=http://18.130.167.38/:9000/"""
                                 }
                             }
                         }
